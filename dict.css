@@ -8,3 +8,5 @@ h1 { font-size: large  }
 h2 { font-size: medium }
 h3 { font-size: medium }
 h4 { font-size: medium }
+
+pre {background:#fff8ed; border: 1pt solid #AEBDCC; padding: 5pt }
