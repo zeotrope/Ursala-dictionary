@@ -2,7 +2,7 @@ a:link    {color: #0066cc; text-decoration: none      }
 a:visited {color: #0066cc; text-decoration: none      }
 a:hover   {color: #ff9600; text-decoration: underline }
 
-tt { color: #000000; font-weight: bold   }
+tt { color: #000000 }
 th { color: #929292; text-decoration: underline  }
 h1 { font-size: large  }
 h2 { font-size: medium }
