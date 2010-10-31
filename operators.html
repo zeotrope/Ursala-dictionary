@@ -1,109 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="dict.css" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="dict.css">
     <style type="text/css">
-      table {width:100%; cellspacing:5}
-      td    {vertical-align:top; nowrap}
+      table {width:100%; border-spacing:5px}
+      td    {vertical-align:top; width:50%; white-space:nowrap}
     </style>
     <title>Operators</title>
   </head>
   <body>
-    <a href="title.html"    >title</a>&nbsp;
-    <a href="index.html"    >index</a>&nbsp;
-    <a href="pointers.html" >pointers</a>&nbsp;
-    operators&nbsp;
-    <a href="types.html"    >types</a>&nbsp;
-    <a href="phrases.html"  >phrases</a>&nbsp;
-    <a href="primer.html"   >primer</a>&nbsp;
-    <hr /><br />
+    <p style="margin:0px">
+      <a href="title.html"    >title</a>&nbsp;
+      <a href="index.html"    >index</a>&nbsp;
+      <a href="pointers.html" >pointers</a>&nbsp;
+      operators&nbsp;
+      <a href="types.html"    >types</a>&nbsp;
+      <a href="phrases.html"  >phrases</a>&nbsp;
+      <a href="primer.html"   >primer</a>&nbsp;
+    </p>
+    <hr>
 
-    <table>
+    <table style="margin-top:20px;margin-bottom:20px">
       <tr>
 	<td>
-	  <table width=100% cellspacing=5 frame="box">
-	    <thead><b>Data Transforms</b></thead>
+	  <table frame="box">
+	    <tr><th>Data Transforms</th></tr>
 	    <tr>
-	      <td nowrap width=50%><tt>: </tt>&nbsp;&nbsp;Assignment Constructor</td>
-	      <td nowrap width=50%><tt>^:</tt>&nbsp;&nbsp;Tree Constructor</td>
+	      <td><tt>: </tt>&nbsp;&nbsp;Assignment Constructor</td>
+	      <td><tt>^:</tt>&nbsp;&nbsp;Tree Constructor</td>
 	    </tr>
 	    <tr>
-	      <td nowrap><tt>| </tt>&nbsp;&nbsp;Union Of Sets</td>
-	      <td nowrap><a href="operators/o004.html"><tt>--</tt>&nbsp;&nbsp;Append To List</a></td>	    
+	      <td><tt>| </tt>&nbsp;&nbsp;Union Of Sets</td>
+	      <td><a href="operators/o004.html"><tt>--</tt>&nbsp;&nbsp;Append To List</a></td>	    
 	    </tr>
 	    <tr>
-	      <td nowrap><tt>-*</tt>&nbsp;&nbsp;Left Distribution</td>	    
-	      <td nowrap><tt>*-</tt>&nbsp;&nbsp;Right Distribution</td>
-	    </tr>
-	  </table>
-	</td>
-	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5 frame="box">
-	    <thead><b>Constant Forms</b></thead>
-	    <tr>
-	      <td nowrap width=50%><a href="operators/o007.html"><tt>/ </tt>&nbsp;&nbsp;Fix Left Argument</a></td>
-	      <td nowrap width=50%><a href="operators/o008.html"><tt>\ </tt>&nbsp;&nbsp;Fix Right Argument</a></td>
-	    </tr>
-	    <tr>
-	      <td nowrap><tt>/*</tt>&nbsp;&nbsp;Mapping Binary To Unary</td>
-	      <td nowrap><tt>\*</tt>&nbsp;&nbsp;Rev. Mapping Binary To Unary</td>
-	    </tr>
-	    <tr>
-	      <td nowrap><a href="operators/o011.html"><tt>! </tt>&nbsp;&nbsp;Constant Function</a></td>
+	      <td><tt>-*</tt>&nbsp;&nbsp;Left Distribution</td>	    
+	      <td><tt>*-</tt>&nbsp;&nbsp;Right Distribution</td>
 	    </tr>
 	  </table>
 	</td>
-      </tr>
-
-      <tr><td>&nbsp;</td></tr>
-
-      <tr>
-	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5 frame="box">
-	    <thead><b>List Predicates</b></thead>
+	<td>
+	  <table frame="box">
+	    <tr><th>Constant Forms</th></tr>
 	    <tr>
-	      <td nowrap width=50%><tt>$^</tt>&nbsp;&nbsp;Maximum Element</td>
-	      <td nowrap width=50%><tt>$-</tt>&nbsp;&nbsp;Minimum Element</td>
+	      <td><a href="operators/o007.html"><tt>/ </tt>&nbsp;&nbsp;Fix Left Argument</a></td>
+	      <td><a href="operators/o008.html"><tt>\ </tt>&nbsp;&nbsp;Fix Right Argument</a></td>
 	    </tr>
 	    <tr>
-	      <td nowrap><tt>-&lt;</tt>&nbsp;&nbsp;Sort List Comparison</td>
-	      <td nowrap><tt>*~</tt>&nbsp;&nbsp;Filter</td>
+	      <td><tt>/*</tt>&nbsp;&nbsp;Mapping Binary To Unary</td>
+	      <td><tt>\*</tt>&nbsp;&nbsp;Rev. Mapping Binary To Unary</td>
 	    </tr>
 	    <tr>
-	      <td nowrap><tt>~|</tt>&nbsp;&nbsp;Distributing Filter</td>
-	      <td nowrap><tt>|=</tt>&nbsp;&nbsp;Partition By Equiv. Compare</td>
-	    </tr>
-	    <tr>
-	      <td nowrap><tt>!=</tt>&nbsp;&nbsp;Bipartition By Predicate</td>
-	      <td nowrap><tt>*|</tt>&nbsp;&nbsp;Distributing Bipartition</td>
-	    </tr>
-	    <tr>
-	      <td nowrap><tt>-~</tt>&nbsp;&nbsp;Forward Bipartition</td>
-	      <td nowrap><tt>~-</tt>&nbsp;&nbsp;Backward Bipartition</td>
-	    </tr>
-	  </table>
-	</td>
-	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5 frame="box">
-	    <thead><b>Concurrent Forms</b></thead>
-	    <tr>
-	      <td nowrap width=50%><tt>* </tt>&nbsp;&nbsp;Map</td>
-	      <td nowrap width=50%><tt>~*</tt>&nbsp;&nbsp;Map To Both</td>
-	    </tr>
-	    <tr>
-	      <td nowrap><tt>*=</tt>&nbsp;&nbsp;Flattening Map</td>
-	      <td nowrap><tt>|\</tt>&nbsp;&nbsp;Triangle</td>
-	    </tr>
-	    <tr>
-	      <td nowrap><tt>~~</tt>&nbsp;&nbsp;Pairwise Application</td>
-	      <td nowrap><tt>$ </tt>&nbsp;&nbsp;Raise Record Order</td>
-	    </tr>
-	    <tr>
-	      <td nowrap><a href="operators/o028.html"><tt>^ </tt>&nbsp;&nbsp;Composition After Coupling</a></td>
-	      <td nowrap><tt>^~</tt>&nbsp;&nbsp;Couple/Compose and Fan</td>
-	    </tr>
-	    <tr>
-	      <td nowrap><tt>^*</tt>&nbsp;&nbsp;Couple, Compose and Map</td>
-	      <td nowrap><tt>^|</tt>&nbsp;&nbsp;Pairwise Coupling</td>
+	      <td><a href="operators/o011.html"><tt>! </tt>&nbsp;&nbsp;Constant Function</a></td>
 	    </tr>
 	  </table>
 	</td>
@@ -112,66 +61,53 @@
       <tr><td>&nbsp;</td></tr>
 
       <tr>
-	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5 frame="box">
-	    <thead><b>Pointer Operations</b></thead>
+	<td>
+	  <table frame="box">
+	    <tr><th>List Predicates</th></tr>
 	    <tr>
-	      <td nowrap width=50%><tt>&amp; </tt>&nbsp;&nbsp;Pointer</td>
-	      <td nowrap width=50%><tt>~ </tt>&nbsp;&nbsp;Deconstruction</td>
+	      <td><tt>$^</tt>&nbsp;&nbsp;Maximum Element</td>
+	      <td><tt>$-</tt>&nbsp;&nbsp;Minimum Element</td>
 	    </tr>
 	    <tr>
-	      <td nowrap><tt>. </tt>&nbsp;&nbsp;Pointer/Lambda</td>
-	      <td nowrap><tt>:=</tt>&nbsp;&nbsp;Address Assignment</td>
-	    </tr>
-	  </table>
-	</td>
-	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5 frame="box">
-	    <thead><b>Recursive</b></thead>
-	    <tr>
-	      <td nowrap width=50%><tt>=&gt;</tt>&nbsp;&nbsp;Folding</td>
-	      <td nowrap width=50%><tt>:-</tt>&nbsp;&nbsp;Reduction</td>
+	      <td><tt>-&lt;</tt>&nbsp;&nbsp;Sort List Comparison</td>
+	      <td><tt>*~</tt>&nbsp;&nbsp;Filter</td>
 	    </tr>
 	    <tr>
-	      <td nowrap><tt>&lt;:</tt>&nbsp;&nbsp;Recursive Composition</td>
-	      <td nowrap><tt>*^</tt>&nbsp;&nbsp;Tree Folding</td>
-	    </tr>
-	  </table>
-	</td>
-      </tr>
-
-      <tr><td>&nbsp;</td></tr>
-
-      <tr>
-	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5 frame="box">
-	    <thead><b>Sequencing</b></thead>
-	    <tr>
-	      <td nowrap width=50%><tt>-&gt;</tt>&nbsp;&nbsp;Iteration</td>
-	      <td nowrap width=50%><tt>^=</tt>&nbsp;&nbsp;Fixed Point Iteration</td>
+	      <td><tt>~|</tt>&nbsp;&nbsp;Distributing Filter</td>
+	      <td><tt>|=</tt>&nbsp;&nbsp;Partition By Equiv. Compare</td>
 	    </tr>
 	    <tr>
-	      <td nowrap><tt>+ </tt>&nbsp;&nbsp;Function Composition</td>
-	      <td nowrap><tt>; </tt>&nbsp;&nbsp;Sequential Composition</td>
+	      <td><tt>!=</tt>&nbsp;&nbsp;Bipartition By Predicate</td>
+	      <td><tt>*|</tt>&nbsp;&nbsp;Distributing Bipartition</td>
 	    </tr>
 	    <tr>
-	      <td nowrap><tt>@ </tt>&nbsp;&nbsp;Deconstruct Compose</td>
+	      <td><tt>-~</tt>&nbsp;&nbsp;Forward Bipartition</td>
+	      <td><tt>~-</tt>&nbsp;&nbsp;Backward Bipartition</td>
 	    </tr>
 	  </table>
 	</td>
-	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5 frame="box">
-	    <thead><b>Conditional</b></thead>
+	<td>
+	  <table frame="box">
+	    <tr><th>Concurrent Forms</th></tr>
 	    <tr>
-	      <td nowrap width=50%><tt>? </tt>&nbsp;&nbsp;Conditional</td>
-	      <td nowrap width=50%><tt>^?</tt>&nbsp;&nbsp;Recursive Conditional</td>
+	      <td><tt>* </tt>&nbsp;&nbsp;Map</td>
+	      <td><tt>~*</tt>&nbsp;&nbsp;Map To Both</td>
 	    </tr>
 	    <tr>
-	      <td nowrap><tt>?=</tt>&nbsp;&nbsp;Comparing Conditional</td>
-	      <td nowrap><tt>?$</tt>&nbsp;&nbsp;Prefix Conditional</td>
+	      <td><tt>*=</tt>&nbsp;&nbsp;Flattening Map</td>
+	      <td><tt>|\</tt>&nbsp;&nbsp;Triangle</td>
 	    </tr>
 	    <tr>
-	      <td nowrap><tt>?&lt;</tt>&nbsp;&nbsp;Inclusion Conditional</td>
+	      <td><tt>~~</tt>&nbsp;&nbsp;Pairwise Application</td>
+	      <td><tt>$ </tt>&nbsp;&nbsp;Raise Record Order</td>
+	    </tr>
+	    <tr>
+	      <td><a href="operators/o028.html"><tt>^ </tt>&nbsp;&nbsp;Composition After Coupling</a></td>
+	      <td><tt>^~</tt>&nbsp;&nbsp;Couple/Compose and Fan</td>
+	    </tr>
+	    <tr>
+	      <td><tt>^*</tt>&nbsp;&nbsp;Couple, Compose and Map</td>
+	      <td><tt>^|</tt>&nbsp;&nbsp;Pairwise Coupling</td>
 	    </tr>
 	  </table>
 	</td>
@@ -180,52 +116,29 @@
       <tr><td>&nbsp;</td></tr>
 
       <tr>
-	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5 frame="box">
-	    <thead><b>Predicate</b></thead>
+	<td>
+	  <table frame="box">
+	    <tr><th>Pointer Operations</th></tr>
 	    <tr>
-	      <td nowrap width=50%><tt>&amp;&amp;</tt>&nbsp;&nbsp;Functional Conjunction</td>
-	      <td nowrap width=50%><tt>||</tt>&nbsp;&nbsp;Conjunction</td>
+	      <td><tt>&amp; </tt>&nbsp;&nbsp;Pointer</td>
+	      <td><tt>~ </tt>&nbsp;&nbsp;Deconstruction</td>
 	    </tr>
 	    <tr>
-	      <td nowrap><tt>!|</tt>&nbsp;&nbsp;Disjunction</td>
-	      <td nowrap><tt>^&amp;</tt>&nbsp;&nbsp;Recursive Conjunction</td>
-	    </tr>
-	    <tr>
-	      <td nowrap><tt>^!</tt>&nbsp;&nbsp;Recursive Logical or</td>
-	      <td nowrap><tt>-=</tt>&nbsp;&nbsp;Membership</td>
-	    </tr>
-	    <tr>
-	      <td nowrap><tt>==</tt>&nbsp;&nbsp;Comparison</td>
-	      <td nowrap><tt>~&lt;</tt>&nbsp;&nbsp;Non-member</td>
-	    </tr>
-	    <tr>
-	      <td nowrap><tt>~=</tt>&nbsp;&nbsp;Unequal</td>
+	      <td><tt>. </tt>&nbsp;&nbsp;Pointer/Lambda</td>
+	      <td><tt>:=</tt>&nbsp;&nbsp;Address Assignment</td>
 	    </tr>
 	  </table>
 	</td>
-	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5 frame="box">
-	    <thead><b>Pattern Matching</b></thead>
+	<td>
+	  <table frame="box">
+	    <tr><th>Recursive</th></tr>
 	    <tr>
-	      <td nowrap width=50%><tt>% </tt>&nbsp;&nbsp;Literal Type</td>
-	      <td nowrap><tt>%-</tt>&nbsp;&nbsp;Parameterized type</td>
+	      <td><tt>=&gt;</tt>&nbsp;&nbsp;Folding</td>
+	      <td><tt>:-</tt>&nbsp;&nbsp;Reduction</td>
 	    </tr>
 	    <tr>
-	      <td nowrap width=50%><tt>%~</tt>&nbsp;&nbsp;Bernoulli Variable</td>
-	      <td nowrap><tt>%=</tt>&nbsp;&nbsp;String Substitution</td>
-
-	    </tr>
-	    <tr>
-	      <td nowrap><tt>-:</tt>&nbsp;&nbsp;Total Reification</td>
-	      <td nowrap><tt>-$</tt>&nbsp;&nbsp;Unzipped Partial Reification</td>
-	    </tr>
-	    <tr>
-	      <td nowrap><tt>=]</tt>&nbsp;&nbsp;Startswith</td>
-	      <td nowrap><tt>[=</tt>&nbsp;&nbsp;Prefix</td>
-	    </tr>
-	    <tr>
-	      <td nowrap><tt>=:</tt>&nbsp;&nbsp;Address Map</td>
+	      <td><tt>&lt;:</tt>&nbsp;&nbsp;Recursive Composition</td>
+	      <td><tt>*^</tt>&nbsp;&nbsp;Tree Folding</td>
 	    </tr>
 	  </table>
 	</td>
@@ -234,29 +147,35 @@
       <tr><td>&nbsp;</td></tr>
 
       <tr>
-	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5 frame="box">
-	    <thead><b>Library</b></thead>
+	<td>
+	  <table frame="box">
+	    <tr><th>Sequencing</th></tr>
 	    <tr>
-	      <td nowrap width=50%><tt>- </tt>&nbsp;&nbsp;Table Lookup</td>
-	      <td nowrap width=50%><tt>..</tt>&nbsp;&nbsp;Library</td>
+	      <td><tt>-&gt;</tt>&nbsp;&nbsp;Iteration</td>
+	      <td><tt>^=</tt>&nbsp;&nbsp;Fixed Point Iteration</td>
 	    </tr>
 	    <tr>
-	      <td nowrap><tt>.|</tt>&nbsp;&nbsp;Library Runtime</td>
-	      <td nowrap><tt>.!</tt>&nbsp;&nbsp;Library Compiletime</td>
+	      <td><tt>+ </tt>&nbsp;&nbsp;Function Composition</td>
+	      <td><tt>; </tt>&nbsp;&nbsp;Sequential Composition</td>
+	    </tr>
+	    <tr>
+	      <td><tt>@ </tt>&nbsp;&nbsp;Deconstruct Compose</td>
 	    </tr>
 	  </table>
 	</td>
-	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5 frame="box">
-	    <thead><b>Declaration</b></thead>
+	<td>
+	  <table frame="box">
+	    <tr><th>Conditional</th></tr>
 	    <tr>
-	      <td nowrap width=50%><tt>::</tt>&nbsp;&nbsp;Declare Record</td>
-	      <td nowrap width=50%><tt>= </tt>&nbsp;&nbsp;Declare Identifier</td
+	      <td><tt>? </tt>&nbsp;&nbsp;Conditional</td>
+	      <td><tt>^?</tt>&nbsp;&nbsp;Recursive Conditional</td>
 	    </tr>
 	    <tr>
-	      <td nowrap>&nbsp;</td>
-	      <td nowrap>&nbsp;</td
+	      <td><tt>?=</tt>&nbsp;&nbsp;Comparing Conditional</td>
+	      <td><tt>?$</tt>&nbsp;&nbsp;Prefix Conditional</td>
+	    </tr>
+	    <tr>
+	      <td><tt>?&lt;</tt>&nbsp;&nbsp;Inclusion Conditional</td>
 	    </tr>
 	  </table>
 	</td>
@@ -265,36 +184,127 @@
       <tr><td>&nbsp;</td></tr>
 
       <tr>
-	<td colspan=2 valign="top">
-	  <table width=100% cellspacing=5 frame="box">
-	    <thead><b>Aggregate</b></thead>
+	<td>
+	  <table frame="box">
+	    <tr><th>Predicate</th></tr>
 	    <tr>
-	      <td width=25%><tt>-? ... ?-</tt>&nbsp;&nbsp;Cumulative Conditional</td>
-	      <td width=25%><tt>-+ ... +-</tt>&nbsp;&nbsp;Cumulative Composition</td>
-	      <td width=25%><tt>-| ... |-</tt>&nbsp;&nbsp;Short-Circuit Disjunction</td>
-	      <td width=25%><tt>-! ... !-</tt>&nbsp;&nbsp;Logical Disjunction</td>
+	      <td><tt>&amp;&amp;</tt>&nbsp;&nbsp;Functional Conjunction</td>
+	      <td><tt>||</tt>&nbsp;&nbsp;Conjunction</td>
+	    </tr>
+	    <tr>
+	      <td><tt>!|</tt>&nbsp;&nbsp;Disjunction</td>
+	      <td><tt>^&amp;</tt>&nbsp;&nbsp;Recursive Conjunction</td>
+	    </tr>
+	    <tr>
+	      <td><tt>^!</tt>&nbsp;&nbsp;Recursive Logical or</td>
+	      <td><tt>-=</tt>&nbsp;&nbsp;Membership</td>
+	    </tr>
+	    <tr>
+	      <td><tt>==</tt>&nbsp;&nbsp;Comparison</td>
+	      <td><tt>~&lt;</tt>&nbsp;&nbsp;Non-member</td>
+	    </tr>
+	    <tr>
+	      <td><tt>~=</tt>&nbsp;&nbsp;Unequal</td>
+	    </tr>
+	  </table>
+	</td>
+	<td>
+	  <table frame="box">
+	    <tr><th>Pattern Matching</th></tr>
+	    <tr>
+	      <td><tt>% </tt>&nbsp;&nbsp;Literal Type</td>
+	      <td><tt>%-</tt>&nbsp;&nbsp;Parameterized type</td>
+	    </tr>
+	    <tr>
+	      <td><tt>%~</tt>&nbsp;&nbsp;Bernoulli Variable</td>
+	      <td><tt>%=</tt>&nbsp;&nbsp;String Substitution</td>
+
+	    </tr>
+	    <tr>
+	      <td><tt>-:</tt>&nbsp;&nbsp;Total Reification</td>
+	      <td><tt>-$</tt>&nbsp;&nbsp;Unzipped Partial Reification</td>
+	    </tr>
+	    <tr>
+	      <td><tt>=]</tt>&nbsp;&nbsp;Startswith</td>
+	      <td><tt>[=</tt>&nbsp;&nbsp;Prefix</td>
+	    </tr>
+	    <tr>
+	      <td><tt>=:</tt>&nbsp;&nbsp;Address Map</td>
+	    </tr>
+	  </table>
+	</td>
+      </tr>
+
+      <tr><td>&nbsp;</td></tr>
+
+      <tr>
+	<td>
+	  <table frame="box">
+	    <tr><th>Library</th></tr>
+	    <tr>
+	      <td><tt>- </tt>&nbsp;&nbsp;Table Lookup</td>
+	      <td><tt>..</tt>&nbsp;&nbsp;Library</td>
+	    </tr>
+	    <tr>
+	      <td><tt>.|</tt>&nbsp;&nbsp;Library Runtime</td>
+	      <td><tt>.!</tt>&nbsp;&nbsp;Library Compiletime</td>
+	    </tr>
+	  </table>
+	</td>
+	<td>
+	  <table frame="box">
+	    <tr><th>Declaration</th></tr>
+	    <tr>
+	      <td><tt>::</tt>&nbsp;&nbsp;Declare Record</td>
+	      <td><tt>= </tt>&nbsp;&nbsp;Declare Identifier</td>
+	    </tr>
+	    <tr>
+	      <td >&nbsp;</td>
+	      <td >&nbsp;</td>
+	    </tr>
+	  </table>
+	</td>
+      </tr>
+
+      <tr><td>&nbsp;</td></tr>
+      <tr>
+	<td>
+	  <table frame="box">
+	    <tr><th>Aggregate</th></tr>
+	    <tr>
+	      <td><tt>-? ... ?-</tt>&nbsp;&nbsp;Cumulative Conditional</td>
+	      <td><tt>-+ ... +-</tt>&nbsp;&nbsp;Cumulative Composition</td>
+	    </tr>
+	    <tr>
+	      <td><tt>-| ... |-</tt>&nbsp;&nbsp;Short-Circuit Disjunction</td>
+	      <td><tt>-! ... !-</tt>&nbsp;&nbsp;Logical Disjunction</td>
 	    </tr>
 	    <tr>
 	      <td><tt>-&amp; ... &amp;-</tt>&nbsp;&nbsp;Short-Circuit Conjunction</td>
 	      <td><tt>-[ ... ]-</tt>&nbsp;&nbsp;Text Delimiter</td>
+	    </tr>
+	    <tr><td>&nbsp;</td></tr>
+	    <tr>
 	      <td><tt>&lt; ... &gt; </tt>&nbsp;&nbsp;&nbsp; List Delimiter</td>
 	      <td><tt>{ ... } </tt>&nbsp;&nbsp;&nbsp; Set Delimiter</td>
 	    <tr>
 	      <td><tt>( ... ) </tt>&nbsp;&nbsp;&nbsp; Tuple Delimiter</td>
-	      <td><tt>[ ... ] </tt>&nbsp;&nbsp;&nbsp; Record/A-tree Delimiter</td
+	      <td><tt>[ ... ] </tt>&nbsp;&nbsp;&nbsp; Record/A-tree Delimiter</td>
 	    </tr>
 	  </table>
 	</td>
       </tr>
     </table>
-
-    <br /><hr />
-    <a href="title.html"    >title</a>&nbsp;
-    <a href="index.html"    >index</a>&nbsp;
-    <a href="pointers.html" >pointers</a>&nbsp;
-    operators&nbsp;
-    <a href="types.html"    >types</a>&nbsp;
-    <a href="phrases.html"  >phrases</a>&nbsp;
-    <a href="primer.html"   >primer</a>&nbsp;
+      
+    <hr>
+    <p style="margin:0px">
+      <a href="title.html"    >title</a>&nbsp;
+      <a href="index.html"    >index</a>&nbsp;
+      <a href="pointers.html" >pointers</a>&nbsp;
+      operators&nbsp;
+      <a href="types.html"    >types</a>&nbsp;
+      <a href="phrases.html"  >phrases</a>&nbsp;
+      <a href="primer.html"   >primer</a>&nbsp;
+    </p>
   </body>
 </html>

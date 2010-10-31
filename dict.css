@@ -1,14 +1,16 @@
 html { min-width:800px }
 
+a b       {color:#ff9600}
+a tt { color: #000000 }
 a:link    {color: #0066cc; text-decoration: none      }
 a:visited {color: #0066cc; text-decoration: none      }
 a:hover   {color: #ff9600; text-decoration: underline }
 
-tt { color: #000000 }
-th { color: #929292; text-decoration: underline  }
+th { font-size: medium; text-align:left; text-decoration: bold  }
 h1 { font-size: large  }
 h2 { font-size: medium }
 h3 { font-size: medium }
 h4 { font-size: medium }
 
-pre {background:#fff8ed; border: 1pt solid #AEBDCC; padding: 5pt }
+table {border-color:#d9d9d9}
+pre   {background:#fff8ed; border: 1pt solid #AEBDCC; padding: 5pt }

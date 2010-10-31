@@ -1,370 +1,377 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="dict.css" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="dict.css">
     <title>Pointers</title>
+    <style type="text/css">
+      table {width:100%; border-spacing:0px}
+      td    {vertical-align:top; white-space:nowrap}
+    </style>
   </head>
   <body>
-    <a href="title.html"    >title</a>&nbsp;
-    <a href="index.html"    >index</a>&nbsp;
-    pointers&nbsp;
-    <a href="operators.html">operators</a>&nbsp;
-    <a href="types.html"    >types</a>&nbsp;
-    <a href="phrases.html"  >phrases</a>&nbsp;
-    <a href="primer.html"   >primer</a>&nbsp;
-    <hr /><br />
-    <table cellspacing=0>
-      <thead  align="left">
-	<tr>
-	  <td width=15%><a href="arity.html"><h3>Arity</h3></a></td>
-	  <td width=20%><h3>0</h3> </td>
-	  <td width=20%><h3>1</h3> </td>
-	  <td width=25%><h3>2</h3> </td>
-	  <td width=20%><h3>3</h3> </td>
-	</tr>
-      </thead>
-      <tbody>
-	<thead align="left">
-	  <tr>
-	    <td><a href="pointers.html"><h3>Pointers</h3></a></td>
-	    <td><u><a href="deconstructors.html">Deconstructors</a></u></td>
-	    <td nowrap>&nbsp;</td>
-	    <td><u><a href="constructors.html">Constructors</a></u></td>
-	  </tr>
-	</thead>
-	<tbody align="left">
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/d001.html"><tt>a</tt> &nbsp;&nbsp;&nbsp; Argument     </a></td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/c001.html"><tt>A</tt> &nbsp;&nbsp;&nbsp; Assignment   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/d002.html"><tt>b</tt> &nbsp;&nbsp;&nbsp; Both         </a></td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/c002.html"><tt>C</tt> &nbsp;&nbsp;&nbsp; Cons         </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/d003.html"><tt>d</tt> &nbsp;&nbsp;&nbsp; Root         </a></td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/c003.html"><tt>G</tt> &nbsp;&nbsp;&nbsp; Glooming     </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/d004.html"><tt>e</tt> &nbsp;&nbsp;&nbsp; Element      </a></td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/c004.html"><tt>I</tt> &nbsp;&nbsp;&nbsp; Pairwise relative addressing  </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/d005.html"><tt>f</tt> &nbsp;&nbsp;&nbsp; Function     </a></td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/c005.html"><tt>J</tt> &nbsp;&nbsp;&nbsp; Job  </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/d006.html"><tt>h</tt> &nbsp;&nbsp;&nbsp; Head         </a></td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/c006.html"><tt>P</tt> &nbsp;&nbsp;&nbsp; Relative addressing </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/d007.html"><tt>i</tt> &nbsp;&nbsp;&nbsp; Identity     </a></td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/c007.html"><tt>V</tt> &nbsp;&nbsp;&nbsp; Vertex  </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/d008.html"><tt>l</tt> &nbsp;&nbsp;&nbsp; Left         </a></td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/c008.html"><tt>X</tt> &nbsp;&nbsp;&nbsp; Cross  </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/d009.html"><tt>m</tt> &nbsp;&nbsp;&nbsp; Meaning       </a></td>
-	    <td nowrap>&nbsp;</td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/d010.html"><tt>n</tt> &nbsp;&nbsp;&nbsp; Name           </a></td>
-	    <td nowrap>&nbsp;</td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/d011.html"><tt>r</tt> &nbsp;&nbsp;&nbsp; Right        </a></td>
-	    <td nowrap>&nbsp;</td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/d012.html"><tt>t</tt> &nbsp;&nbsp;&nbsp; Tail         </a></td>
-	    <td nowrap>&nbsp;</td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/d013.html"><tt>u</tt> &nbsp;&nbsp;&nbsp; Proper subset</a></td>
-	    <td nowrap>&nbsp;</td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pointers/d014.html"><tt>v</tt> &nbsp;&nbsp;&nbsp; Subtree       </a></td>
-	    <td nowrap>&nbsp;</td>
-	  </tr>
+    <p style="margin:0px">
+      <a href="title.html"    >title</a>&nbsp;
+      <a href="index.html"    >index</a>&nbsp;
+      pointers&nbsp;
+      <a href="operators.html">operators</a>&nbsp;
+      <a href="types.html"    >types</a>&nbsp;
+      <a href="phrases.html"  >phrases</a>&nbsp;
+      <a href="primer.html"   >primer</a>&nbsp;
+    </p>
+    <hr>
 
-	  <tr><td>&nbsp;</td></tr>
+    <table style="margin-top:20px;margin-bottom:20px">
+      <tr>
+	<th><a href="arity.html">Arity</a></th>
+	<th>0</th>
+	<th>1</th>
+	<th>2</th>
+	<th>3</th>
+      </tr>
 
-	  <tr>
-	    <td><a href="pseudopointers.html"><h3 align="left">Pseudo-Pointers</h3></a></td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p001.html"><tt>L</tt> &nbsp;&nbsp;&nbsp; List flatten </a></td>
-	    <td nowrap><a href="pseudopointers/p013.html"><tt>F</tt> &nbsp;&nbsp;&nbsp; Filter       </a></td>
-	    <td nowrap><a href="pseudopointers/p034.html"><tt>B</tt> &nbsp;&nbsp;&nbsp; Conjunction  </a></td>
-	    <td nowrap><a href="pseudopointers/p073.html"><tt>Q</tt> Conditional  </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p002.html"><tt>N</tt> &nbsp;&nbsp;&nbsp; Empty value  </a></td>
-	    <td nowrap><a href="pseudopointers/p014.html"><tt>K</tt> &nbsp;&nbsp;&nbsp; Numerical escape op       </a></td>
-	    <td nowrap><a href="pseudopointers/p035.html"><tt>D</tt> &nbsp;&nbsp;&nbsp; Left distribution  </a></td>
-	    <td nowrap><a href="pseudopointers/p074.html"><tt>q</tt> Recursive conditional  </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p003.html"><tt>s</tt> &nbsp;&nbsp;&nbsp; List to set  </a></td>
-	    <td nowrap><a href="pseudopointers/p015.html"><tt>S</tt> &nbsp;&nbsp;&nbsp; Map         </a></td>
-	    <td nowrap><a href="pseudopointers/p036.html"><tt>E</tt> &nbsp;&nbsp;&nbsp; Comparison   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p004.html"><tt>x</tt> &nbsp;&nbsp;&nbsp; List reverse </a></td>
-	    <td nowrap><a href="pseudopointers/p016.html"><tt>Z</tt> &nbsp;&nbsp;&nbsp; Negation    </a></td>
-	    <td nowrap><a href="pseudopointers/p037.html"><tt>H</tt> &nbsp;&nbsp;&nbsp; Function application   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p005.html"><tt>y</tt> &nbsp;&nbsp;&nbsp; Lead item    </a></td>
-	    <td nowrap><a href="pseudopointers/p017.html"><tt>g</tt> &nbsp;&nbsp;&nbsp; List conjunction  </a></td>
-	    <td nowrap><a href="pseudopointers/p038.html"><tt>M</tt> &nbsp;&nbsp;&nbsp; Mapped recursion  </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p006.html"><tt>z</tt> &nbsp;&nbsp;&nbsp; Last item    </a></td>
-	    <td nowrap><a href="pseudopointers/p018.html"><tt>k</tt> &nbsp;&nbsp;&nbsp; List disjunction  </a></td>
-	    <td nowrap><a href="pseudopointers/p039.html"><tt>O</tt> &nbsp;&nbsp;&nbsp; Functional composition   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p007.html"><tt>K8</tt> &nbsp; Random draw </a></td>
-	    <td nowrap><a href="pseudopointers/p019.html"><tt>o</tt> &nbsp;&nbsp;&nbsp; Tree folding </a></td>
-	    <td nowrap><a href="pseudopointers/p040.html"><tt>R</tt> &nbsp;&nbsp;&nbsp; Recursion   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p008.html"><tt>K22</tt> Address enumeration    </a></td>
-	    <td nowrap><a href="pseudopointers/p020.html"><tt>K1</tt> &nbsp; All-same    </a></td>
-	    <td nowrap><a href="pseudopointers/p041.html"><tt>T</tt> &nbsp;&nbsp;&nbsp; Concatenation   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p009.html"><tt>K27</tt> Alternate including head</a></td>
-	    <td nowrap><a href="pseudopointers/p021.html"><tt>K2</tt> &nbsp; Partition by compare </a></td>
-	    <td nowrap><a href="pseudopointers/p042.html"><tt>U</tt> &nbsp;&nbsp;&nbsp; Union of sets   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p010.html"><tt>K28</tt> Alternate excluding head</a></td>
-	    <td nowrap><a href="pseudopointers/p022.html"><tt>K6</tt> &nbsp; Tree eval   </a></td>
-	    <td nowrap><a href="pseudopointers/p043.html"><tt>W</tt> &nbsp;&nbsp;&nbsp; Pairwise recursion </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p011.html"><tt>K30</tt> First half </a></td>
-	    <td nowrap><a href="pseudopointers/p023.html"><tt>K7</tt> &nbsp; Transpose  </a></td>
-	    <td nowrap><a href="pseudopointers/p044.html"><tt>Y</tt> &nbsp;&nbsp;&nbsp; Disjunction </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p012.html"><tt>K31</tt> Second half</a></td>
-	    <td nowrap><a href="pseudopointers/p024.html"><tt>K9</tt> &nbsp; Triangle combinator   </a></td>
-	    <td nowrap><a href="pseudopointers/p045.html"><tt>c</tt> &nbsp;&nbsp;&nbsp; Intersection of sets   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p025.html"><tt>K11</tt> Generalized intersection </a></td>
-	    <td nowrap><a href="pseudopointers/p046.html"><tt>j</tt> &nbsp;&nbsp;&nbsp; Difference of sets   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p026.html"><tt>K13</tt> Generalized difference   </a></td>
-	    <td nowrap><a href="pseudopointers/p047.html"><tt>p</tt> &nbsp;&nbsp;&nbsp; Zip function   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p027.html"><tt>K15</tt> Distributing bipartition   </a></td>
-	    <td nowrap><a href="pseudopointers/p048.html"><tt>w</tt> &nbsp;&nbsp;&nbsp; Membership   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p028.html"><tt>K17</tt> Distributing filter   </a></td>
-	    <td nowrap><a href="pseudopointers/p049.html"><tt>K0</tt> &nbsp; Cartesian product  </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p029.html"><tt>K20</tt> Bipartition </a></td>
-	    <td nowrap><a href="pseudopointers/p050.html"><tt>K3</tt> &nbsp; Substring predicate   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p030.html"><tt>K21</tt> Reduce with empty   </a></td>
-	    <td nowrap><a href="pseudopointers/p051.html"><tt>K4</tt> &nbsp; Prefix predicate   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p031.html"><tt>K23</tt> Address map   </a></td>
-	    <td nowrap><a href="pseudopointers/p052.html"><tt>K5</tt> &nbsp; Suffix predicate   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p032.html"><tt>K24</tt> Partial reification   </a></td>
-	    <td nowrap><a href="pseudopointers/p053.html"><tt>K10</tt> Generalized intersection by comparison </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p033.html"><tt>K33</tt> Triangle squared   </a></td>
-	    <td nowrap><a href="pseudopointers/p054.html"><tt>K12</tt> Difference by comparison   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p055.html"><tt>K14</tt> Distributing bipartition by comparison   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p056.html"><tt>K16</tt> Distributing filter by compare   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p057.html"><tt>K18</tt> Subset predicate   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p058.html"><tt>K19</tt> Proper subset predicate   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p059.html"><tt>K25</tt> Unzipped partial reification  </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p060.html"><tt>K26</tt> Total reification   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p061.html"><tt>K29</tt> Merge lists   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p062.html"><tt>K32</tt> Map func to alt list items  </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p063.html"><tt>K34</tt> Depth first tree leaf tagging  </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p064.html"><tt>K35</tt> Preorder tree trunk tagging</a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p065.html"><tt>K36</tt>  Preorder tree tagging</a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p066.html"><tt>K37</tt> Postorder tree trunk tagging </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p067.html"><tt>K38</tt> Postorder tree tagging  </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p068.html"><tt>K39</tt> Inorder tree trunk tagging  </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p069.html"><tt>K40</tt> Inorder tree tagging  </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p070.html"><tt>K41</tt> Level order tree leaf tagging   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p071.html"><tt>K42</tt> Level order tree trunk tagging   </a></td>
-	  </tr>
-	  <tr>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap>&nbsp;</td>
-	    <td nowrap><a href="pseudopointers/p072.html"><tt>K43</tt> Level order tree tagging   </a></td>
-	  </tr>
-	</tbody>
+      <tr><td>&nbsp;</td></tr>
+
+      <tr>
+	<th><a href="pointers.html">Pointers</a></th>
+	<th><a href="deconstructors.html" style="text-decoration:underline">Deconstructors</a></th>
+	<th>&nbsp;</th>
+	<th><a href="constructors.html" style="text-decoration:underline">Constructors</a></th>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pointers/d001.html"><tt>a</tt> &nbsp;&nbsp;&nbsp; Argument     </a></td>
+	<td>&nbsp;</td>
+	<td><a href="pointers/c001.html"><tt>A</tt> &nbsp;&nbsp;&nbsp; Assignment   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pointers/d002.html"><tt>b</tt> &nbsp;&nbsp;&nbsp; Both         </a></td>
+	<td>&nbsp;</td>
+	<td><a href="pointers/c002.html"><tt>C</tt> &nbsp;&nbsp;&nbsp; Cons         </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pointers/d003.html"><tt>d</tt> &nbsp;&nbsp;&nbsp; Root         </a></td>
+	<td>&nbsp;</td>
+	<td><a href="pointers/c003.html"><tt>G</tt> &nbsp;&nbsp;&nbsp; Glooming     </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pointers/d004.html"><tt>e</tt> &nbsp;&nbsp;&nbsp; Element      </a></td>
+	<td>&nbsp;</td>
+	<td><a href="pointers/c004.html"><tt>I</tt> &nbsp;&nbsp;&nbsp; Pairwise relative addressing  </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pointers/d005.html"><tt>f</tt> &nbsp;&nbsp;&nbsp; Function     </a></td>
+	<td>&nbsp;</td>
+	<td><a href="pointers/c005.html"><tt>J</tt> &nbsp;&nbsp;&nbsp; Job  </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pointers/d006.html"><tt>h</tt> &nbsp;&nbsp;&nbsp; Head         </a></td>
+	<td>&nbsp;</td>
+	<td><a href="pointers/c006.html"><tt>P</tt> &nbsp;&nbsp;&nbsp; Relative addressing </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pointers/d007.html"><tt>i</tt> &nbsp;&nbsp;&nbsp; Identity     </a></td>
+	<td>&nbsp;</td>
+	<td><a href="pointers/c007.html"><tt>V</tt> &nbsp;&nbsp;&nbsp; Vertex  </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pointers/d008.html"><tt>l</tt> &nbsp;&nbsp;&nbsp; Left         </a></td>
+	<td>&nbsp;</td>
+	<td><a href="pointers/c008.html"><tt>X</tt> &nbsp;&nbsp;&nbsp; Cross  </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pointers/d009.html"><tt>m</tt> &nbsp;&nbsp;&nbsp; Meaning       </a></td>
+	<td>&nbsp;</td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pointers/d010.html"><tt>n</tt> &nbsp;&nbsp;&nbsp; Name           </a></td>
+	<td>&nbsp;</td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pointers/d011.html"><tt>r</tt> &nbsp;&nbsp;&nbsp; Right        </a></td>
+	<td>&nbsp;</td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pointers/d012.html"><tt>t</tt> &nbsp;&nbsp;&nbsp; Tail         </a></td>
+	<td>&nbsp;</td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pointers/d013.html"><tt>u</tt> &nbsp;&nbsp;&nbsp; Proper subset</a></td>
+	<td>&nbsp;</td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pointers/d014.html"><tt>v</tt> &nbsp;&nbsp;&nbsp; Subtree       </a></td>
+	<td>&nbsp;</td>
+      </tr>
+
+      <tr><td>&nbsp;</td></tr>
+
+      <tr>
+	<th><a href="pseudopointers.html">Pseudo-Pointer</a></th>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p001.html"><tt>L</tt> &nbsp;&nbsp;&nbsp; List flatten </a></td>
+	<td><a href="pseudopointers/p013.html"><tt>F</tt> &nbsp;&nbsp;&nbsp; Filter       </a></td>
+	<td><a href="pseudopointers/p034.html"><tt>B</tt> &nbsp;&nbsp;&nbsp; Conjunction  </a></td>
+	<td><a href="pseudopointers/p073.html"><tt>Q</tt> Conditional  </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p002.html"><tt>N</tt> &nbsp;&nbsp;&nbsp; Empty value  </a></td>
+	<td><a href="pseudopointers/p014.html"><tt>K</tt> &nbsp;&nbsp;&nbsp; Numerical escape op       </a></td>
+	<td><a href="pseudopointers/p035.html"><tt>D</tt> &nbsp;&nbsp;&nbsp; Left distribution  </a></td>
+	<td><a href="pseudopointers/p074.html"><tt>q</tt> Recursive conditional  </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p003.html"><tt>s</tt> &nbsp;&nbsp;&nbsp; List to set  </a></td>
+	<td><a href="pseudopointers/p015.html"><tt>S</tt> &nbsp;&nbsp;&nbsp; Map         </a></td>
+	<td><a href="pseudopointers/p036.html"><tt>E</tt> &nbsp;&nbsp;&nbsp; Comparison   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p004.html"><tt>x</tt> &nbsp;&nbsp;&nbsp; List reverse </a></td>
+	<td><a href="pseudopointers/p016.html"><tt>Z</tt> &nbsp;&nbsp;&nbsp; Negation    </a></td>
+	<td><a href="pseudopointers/p037.html"><tt>H</tt> &nbsp;&nbsp;&nbsp; Function application   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p005.html"><tt>y</tt> &nbsp;&nbsp;&nbsp; Lead item    </a></td>
+	<td><a href="pseudopointers/p017.html"><tt>g</tt> &nbsp;&nbsp;&nbsp; List conjunction  </a></td>
+	<td><a href="pseudopointers/p038.html"><tt>M</tt> &nbsp;&nbsp;&nbsp; Mapped recursion  </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p006.html"><tt>z</tt> &nbsp;&nbsp;&nbsp; Last item    </a></td>
+	<td><a href="pseudopointers/p018.html"><tt>k</tt> &nbsp;&nbsp;&nbsp; List disjunction  </a></td>
+	<td><a href="pseudopointers/p039.html"><tt>O</tt> &nbsp;&nbsp;&nbsp; Functional composition   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p007.html"><tt>K8</tt> &nbsp; Random draw </a></td>
+	<td><a href="pseudopointers/p019.html"><tt>o</tt> &nbsp;&nbsp;&nbsp; Tree folding </a></td>
+	<td><a href="pseudopointers/p040.html"><tt>R</tt> &nbsp;&nbsp;&nbsp; Recursion   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p008.html"><tt>K22</tt> Address enumeration    </a></td>
+	<td><a href="pseudopointers/p020.html"><tt>K1</tt> &nbsp; All-same    </a></td>
+	<td><a href="pseudopointers/p041.html"><tt>T</tt> &nbsp;&nbsp;&nbsp; Concatenation   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p009.html"><tt>K27</tt> Alternate including head</a></td>
+	<td><a href="pseudopointers/p021.html"><tt>K2</tt> &nbsp; Partition by compare </a></td>
+	<td><a href="pseudopointers/p042.html"><tt>U</tt> &nbsp;&nbsp;&nbsp; Union of sets   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p010.html"><tt>K28</tt> Alternate excluding head</a></td>
+	<td><a href="pseudopointers/p022.html"><tt>K6</tt> &nbsp; Tree eval   </a></td>
+	<td><a href="pseudopointers/p043.html"><tt>W</tt> &nbsp;&nbsp;&nbsp; Pairwise recursion </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p011.html"><tt>K30</tt> First half </a></td>
+	<td><a href="pseudopointers/p023.html"><tt>K7</tt> &nbsp; Transpose  </a></td>
+	<td><a href="pseudopointers/p044.html"><tt>Y</tt> &nbsp;&nbsp;&nbsp; Disjunction </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p012.html"><tt>K31</tt> Second half</a></td>
+	<td><a href="pseudopointers/p024.html"><tt>K9</tt> &nbsp; Triangle combinator   </a></td>
+	<td><a href="pseudopointers/p045.html"><tt>c</tt> &nbsp;&nbsp;&nbsp; Intersection of sets   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p025.html"><tt>K11</tt> Generalized intersection </a></td>
+	<td><a href="pseudopointers/p046.html"><tt>j</tt> &nbsp;&nbsp;&nbsp; Difference of sets   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p026.html"><tt>K13</tt> Generalized difference   </a></td>
+	<td><a href="pseudopointers/p047.html"><tt>p</tt> &nbsp;&nbsp;&nbsp; Zip function   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p027.html"><tt>K15</tt> Distributing bipartition   </a></td>
+	<td><a href="pseudopointers/p048.html"><tt>w</tt> &nbsp;&nbsp;&nbsp; Membership   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p028.html"><tt>K17</tt> Distributing filter   </a></td>
+	<td><a href="pseudopointers/p049.html"><tt>K0</tt> &nbsp; Cartesian product  </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p029.html"><tt>K20</tt> Bipartition </a></td>
+	<td><a href="pseudopointers/p050.html"><tt>K3</tt> &nbsp; Substring predicate   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p030.html"><tt>K21</tt> Reduce with empty   </a></td>
+	<td><a href="pseudopointers/p051.html"><tt>K4</tt> &nbsp; Prefix predicate   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p031.html"><tt>K23</tt> Address map   </a></td>
+	<td><a href="pseudopointers/p052.html"><tt>K5</tt> &nbsp; Suffix predicate   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p032.html"><tt>K24</tt> Partial reification   </a></td>
+	<td><a href="pseudopointers/p053.html"><tt>K10</tt> Generalized intersection by comparison </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p033.html"><tt>K33</tt> Triangle squared   </a></td>
+	<td><a href="pseudopointers/p054.html"><tt>K12</tt> Difference by comparison   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p055.html"><tt>K14</tt> Distributing bipartition by comparison   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p056.html"><tt>K16</tt> Distributing filter by compare   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p057.html"><tt>K18</tt> Subset predicate   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p058.html"><tt>K19</tt> Proper subset predicate   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p059.html"><tt>K25</tt> Unzipped partial reification  </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p060.html"><tt>K26</tt> Total reification   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p061.html"><tt>K29</tt> Merge lists   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p062.html"><tt>K32</tt> Map func to alt list items  </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p063.html"><tt>K34</tt> Depth first tree leaf tagging  </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p064.html"><tt>K35</tt> Preorder tree trunk tagging</a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p065.html"><tt>K36</tt>  Preorder tree tagging</a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p066.html"><tt>K37</tt> Postorder tree trunk tagging </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p067.html"><tt>K38</tt> Postorder tree tagging  </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p068.html"><tt>K39</tt> Inorder tree trunk tagging  </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p069.html"><tt>K40</tt> Inorder tree tagging  </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p070.html"><tt>K41</tt> Level order tree leaf tagging   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p071.html"><tt>K42</tt> Level order tree trunk tagging   </a></td>
+      </tr>
+      <tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="pseudopointers/p072.html"><tt>K43</tt> Level order tree tagging   </a></td>
+      </tr>
     </table>
 
-    <br /><hr />
-    <a href="title.html"    >title</a>&nbsp;
-    <a href="index.html"    >index</a>&nbsp;
-    pointers&nbsp;
-    <a href="operators.html">operators</a>&nbsp;
-    <a href="types.html"    >types</a>&nbsp;
-    <a href="phrases.html"  >phrases</a>&nbsp;
-    <a href="primer.html"   >primer</a>&nbsp;
+    <hr>
+    <p style="margin:0px">
+      <a href="title.html"    >title</a>&nbsp;
+      <a href="index.html"    >index</a>&nbsp;
+      pointers&nbsp;
+      <a href="operators.html">operators</a>&nbsp;
+      <a href="types.html"    >types</a>&nbsp;
+      <a href="phrases.html"  >phrases</a>&nbsp;
+      <a href="primer.html"   >primer</a>&nbsp;
+    </p>
   </body>
 </html>
