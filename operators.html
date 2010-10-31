@@ -1,6 +1,10 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="dict.css" />
+    <style type="text/css">
+      table {width:100%; cellspacing:5}
+      td    {vertical-align:top; nowrap}
+    </style>
     <title>Operators</title>
   </head>
   <body>
@@ -13,10 +17,10 @@
     <a href="primer.html"   >primer</a>&nbsp;
     <hr /><br />
 
-    <table cellspacing=5 width=100%>
+    <table>
       <tr>
-	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5>
+	<td>
+	  <table width=100% cellspacing=5 frame="box">
 	    <thead><b>Data Transforms</b></thead>
 	    <tr>
 	      <td nowrap width=50%><tt>: </tt>&nbsp;&nbsp;Assignment Constructor</td>
@@ -33,7 +37,7 @@
 	  </table>
 	</td>
 	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5>
+	  <table width=100% cellspacing=5 frame="box">
 	    <thead><b>Constant Forms</b></thead>
 	    <tr>
 	      <td nowrap width=50%><a href="operators/o007.html"><tt>/ </tt>&nbsp;&nbsp;Fix Left Argument</a></td>
@@ -54,7 +58,7 @@
 
       <tr>
 	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5>
+	  <table width=100% cellspacing=5 frame="box">
 	    <thead><b>List Predicates</b></thead>
 	    <tr>
 	      <td nowrap width=50%><tt>$^</tt>&nbsp;&nbsp;Maximum Element</td>
@@ -79,7 +83,7 @@
 	  </table>
 	</td>
 	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5>
+	  <table width=100% cellspacing=5 frame="box">
 	    <thead><b>Concurrent Forms</b></thead>
 	    <tr>
 	      <td nowrap width=50%><tt>* </tt>&nbsp;&nbsp;Map</td>
@@ -109,7 +113,7 @@
 
       <tr>
 	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5>
+	  <table width=100% cellspacing=5 frame="box">
 	    <thead><b>Pointer Operations</b></thead>
 	    <tr>
 	      <td nowrap width=50%><tt>&amp; </tt>&nbsp;&nbsp;Pointer</td>
@@ -122,7 +126,7 @@
 	  </table>
 	</td>
 	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5>
+	  <table width=100% cellspacing=5 frame="box">
 	    <thead><b>Recursive</b></thead>
 	    <tr>
 	      <td nowrap width=50%><tt>=&gt;</tt>&nbsp;&nbsp;Folding</td>
@@ -140,7 +144,7 @@
 
       <tr>
 	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5>
+	  <table width=100% cellspacing=5 frame="box">
 	    <thead><b>Sequencing</b></thead>
 	    <tr>
 	      <td nowrap width=50%><tt>-&gt;</tt>&nbsp;&nbsp;Iteration</td>
@@ -156,7 +160,7 @@
 	  </table>
 	</td>
 	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5>
+	  <table width=100% cellspacing=5 frame="box">
 	    <thead><b>Conditional</b></thead>
 	    <tr>
 	      <td nowrap width=50%><tt>? </tt>&nbsp;&nbsp;Conditional</td>
@@ -177,7 +181,7 @@
 
       <tr>
 	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5>
+	  <table width=100% cellspacing=5 frame="box">
 	    <thead><b>Predicate</b></thead>
 	    <tr>
 	      <td nowrap width=50%><tt>&amp;&amp;</tt>&nbsp;&nbsp;Functional Conjunction</td>
@@ -201,7 +205,7 @@
 	  </table>
 	</td>
 	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5>
+	  <table width=100% cellspacing=5 frame="box">
 	    <thead><b>Pattern Matching</b></thead>
 	    <tr>
 	      <td nowrap width=50%><tt>% </tt>&nbsp;&nbsp;Literal Type</td>
@@ -231,7 +235,7 @@
 
       <tr>
 	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5>
+	  <table width=100% cellspacing=5 frame="box">
 	    <thead><b>Library</b></thead>
 	    <tr>
 	      <td nowrap width=50%><tt>- </tt>&nbsp;&nbsp;Table Lookup</td>
@@ -244,11 +248,15 @@
 	  </table>
 	</td>
 	<td valign="top" width=50%>
-	  <table width=100% cellspacing=5>
-	    <thead><b>Pattern Matching</b></thead>
+	  <table width=100% cellspacing=5 frame="box">
+	    <thead><b>Declaration</b></thead>
 	    <tr>
 	      <td nowrap width=50%><tt>::</tt>&nbsp;&nbsp;Declare Record</td>
-	      <td nowrap width=50%><tt>= </tt>&nbsp;&nbsp;Declare Identifier</td>
+	      <td nowrap width=50%><tt>= </tt>&nbsp;&nbsp;Declare Identifier</td
+	    </tr>
+	    <tr>
+	      <td nowrap>&nbsp;</td>
+	      <td nowrap>&nbsp;</td
 	    </tr>
 	  </table>
 	</td>
@@ -258,7 +266,7 @@
 
       <tr>
 	<td colspan=2 valign="top">
-	  <table width=100% cellspacing=5>
+	  <table width=100% cellspacing=5 frame="box">
 	    <thead><b>Aggregate</b></thead>
 	    <tr>
 	      <td width=25%><tt>-? ... ?-</tt>&nbsp;&nbsp;Cumulative Conditional</td>
