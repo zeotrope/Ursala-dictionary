@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../dict.css" />
+    <title>^ Composition After Coupling</title>
+  </head>
+  <body>
+    <a href="../title.html"    >title</a>&nbsp;
+    <a href="../index.html"    >index</a>&nbsp;
+    <a href="../pointers.html" >pointers</a>&nbsp;
+    <a href="../operators.html">operators</a>&nbsp;
+    <a href="../types.html"    >types</a>&nbsp;
+    <a href="../phrases.html"  >phrases</a>&nbsp;
+    <a href="../primer.html"   >primer</a>&nbsp;
+    <hr><br />
+
+    <table width=100%>
+      <tr>
+	<td width=33% align="left">
+	    <font size=+1>Operator:&nbsp;&nbsp;</font>    <!-- type     -->
+	    <font size=+2><b><tt>Functions</tt></b></font>    <!-- arg type -->
+	</td>
+	<td width=34% align="center">
+	  <table>
+	    <tr>
+	      <td><tt><b><font size=+3>--</font></b></tt></td>
+	      <td>&nbsp;</td>
+	      <td bgcolor=#dddddd><tt><font size=+2>Composition After Coupling</font></tt></td>   <!-- name -->
+	    </tr>
+	  </table>
+	</td>
+	<td width=33% align="right">
+	  <font size=+1>Arity:&nbsp;&nbsp;</font>
+	  <font size=+2><b>1 3 2</b></font>          <!-- arity -->
+	</td>
+      </tr>
+    </table><br />
+
+    <table width=100%>
+      <tr>
+	<!-- Prefix -->
+	<td valign="top" width=31% bgcolor=#eeeeee>
+	</td>
+
+	<td width=2%>&nbsp;</td>
+
+	<!-- Infix -->
+	<td valign="top" width=32% bgcolor=#eeeeee>
+	  Takes a function as its left operand and a pair of
+	  functions as its right operand, with the algebraic property:	  
+	  <pre>
+    f ^(g, h) ≡ f+ (^)(g, h)</pre>
+	</td>
+
+	<td valign="top" width=2%>&nbsp;</td>
+
+	<!-- Postfix -->
+	<td valign="top" width=31% bgcolor=#eeeeee>
+	  Binary operator lifting:
+	  <pre>
+    ((f^) (g,h)) x = f(g x,h x)</pre>
+	</td>
+      </tr>
+    </table><br />
+
+    <table width=100%>
+      <tr>
+	<!-- Pointer Suffix -->
+	<td valign="top" width=31% bgcolor=#d1dbcf>
+	  Solo:
+	  <pre>^s(f,g) = ~&amp;s+ ^(f,g)</pre>
+	  Infix:
+	  <pre>f^s(f,g) = f+ ~&amp;s ^(f,g)</pre>
+	  Postfix:
+	  <pre>(h^s)(f,g) = h^s(f,g)</pre>
+	</td>
+	<td width=2%>&nbsp;</td>
+	<!-- Solo -->
+	<td valign="top" width=32% bgcolor=#eeeeee>
+	  Coupling combinator, takes a pair of functions as an argument and
+	  returns a function as a result.This operation corresponds to the virtual machine’s
+	  couple combinator.
+	  <pre>
+     ((^) (f,g)) x = (f x,g x)</pre>
+	</td>
+	<td width=2%>&nbsp;</td>
+	<td valign="top" width=31%>&nbsp;</td>
+      </tr>
+    </table><br />
+
+    <!-- Examples -->
+    <pre>
+</pre>
+  </body>
+</html>

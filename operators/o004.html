@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../dict.css" />
+    <title>-- Append to list</title>
+  </head>
+  <body>
+    <a href="../title.html"    >title</a>&nbsp;
+    <a href="../index.html"    >index</a>&nbsp;
+    <a href="../pointers.html" >pointers</a>&nbsp;
+    <a href="../operators.html">operators</a>&nbsp;
+    <a href="../types.html"    >types</a>&nbsp;
+    <a href="../phrases.html"  >phrases</a>&nbsp;
+    <a href="../primer.html"   >primer</a>&nbsp;
+    <hr><br />
+
+    <table width=100%>
+      <tr>
+	<td width=33% align="left">
+	    <font size=+1>Operator:&nbsp;&nbsp;</font>
+	    <font size=+2><b><tt>Lists</tt></b></font>
+	</td>
+	<td width=34% align="center">
+	  <table>
+	    <tr>
+	      <td><tt><b><font size=+3>--</font></b></tt></td>
+	      <td>&nbsp;</td>
+	      <td bgcolor=#dddddd><tt><font size=+2>Append To List</font></tt></td>
+	    </tr>
+	  </table>
+	</td>
+	<td width=33% align="right">
+	  <font size=+1>Arity:&nbsp;&nbsp;</font>
+	  <font size=+2><b>1 2 1</b></font>
+	</td>
+      </tr>
+    </table><br />
+
+    <table width=100%>
+      <tr>
+	<!-- Prefix -->
+	<td valign="top" width=31% bgcolor=#eeeeee>
+	  <tt>--x</tt> is a function that appends x to its argument.
+	  <pre>
+    (--x) y = y--x</pre>
+	</td>
+
+	<td width=2%>&nbsp;</td>
+
+	<!-- Infix -->
+	<td valign="top" width=32% bgcolor=#eeeeee>
+	  List concatenation.
+	  <pre>
+    &lt;x0..xn&gt;--&lt;y0..yn&gt; = &lt;x0..xn,y0..yn&gt;</pre>
+	</td>
+
+	<td width=2%>&nbsp;</td>
+
+	<!-- Postfix -->
+	<td valign="top" width=31% bgcolor=#eeeeee>
+	  <tt>x--</tt> is a function that appends its argument to x.
+	  <pre>
+    (x--) y = x--y</pre>
+	</td>
+      </tr>
+    </table><br />
+
+    <table width=100%>
+      <tr>
+	<td width=31%>&nbsp;</td>
+	<td width=2%>&nbsp;</td>
+	<!-- Solo -->
+	<td valign="top" width=32% bgcolor=#eeeeee>
+	  List concatentation.
+	  <pre>
+    -- (&lt;x0..xn&gt;,&lt;y0..yn&gt;) = &lt;x0..xn,y0..yn&gt;</pre>
+	</td>
+	<td width=2%>&nbsp;</td>
+	<td width=31%>&nbsp;</td>
+      </tr>
+    </table><br />
+
+
+    <!-- Examples -->
+    Examples of usage:
+    <pre>
+    &lt;5&gt;--&lt;1,2,3,4&gt;
+&lt;5,1,2,3,4&gt;
+    (&lt;5&gt;--) &lt;1,2,3,4&gt;
+&lt;5,1,2,3,4&gt;
+    (--&lt;5&gt;) &lt;1,2,3,4&gt;
+&lt;1,2,3,4,5&gt;</pre>
+  </body>
+</html>
