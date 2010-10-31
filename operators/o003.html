@@ -39,30 +39,46 @@
       <tr>
 	<!-- Prefix -->
 	<td valign="top" width=31% bgcolor=#eeeeee>
-	  <tt>--x</tt> is a function that appends x to its argument
+	  <tt>--x</tt> is a function that appends x to its argument.
 	  <pre>
-    (--x) y = y--x</pre><br />
+    (--x) y = y--x</pre>
 	</td>
 
 	<td width=2%>&nbsp;</td>
 
 	<!-- Infix -->
 	<td valign="top" width=32% bgcolor=#eeeeee>
-	  List concatenation
+	  List concatenation.
 	  <pre>
-    &lt;x0..xn&gt;--&lt;y0..yn&gt; = &lt;x0..xn,y0..yn&gt;</pre><br />
+    &lt;x0..xn&gt;--&lt;y0..yn&gt; = &lt;x0..xn,y0..yn&gt;</pre>
 	</td>
 
 	<td width=2%>&nbsp;</td>
 
 	<!-- Postfix -->
 	<td valign="top" width=31% bgcolor=#eeeeee>
-	  <tt>x--</tt> is a function that appends its argument to x
+	  <tt>x--</tt> is a function that appends its argument to x.
 	  <pre>
-    (x--) y = x--y</pre><br />
+    (x--) y = x--y</pre>
 	</td>
       </tr>
     </table><br />
+
+    <table width=100%>
+      <tr>
+	<td width=31%>&nbsp;</td>
+	<td width=2%>&nbsp;</td>
+	<!-- Solo -->
+	<td valign="top" width=32% bgcolor=#eeeeee>
+	  List concatentation.
+	  <pre>
+    -- (&lt;x0..xn&gt;,&lt;y0..yn&gt;) = &lt;x0..xn,y0..yn&gt;</pre>
+	</td>
+	<td width=2%>&nbsp;</td>
+	<td width=31%>&nbsp;</td>
+      </tr>
+    </table><br />
+
 
     <!-- Examples -->
     Examples of usage:

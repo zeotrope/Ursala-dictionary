@@ -1,7 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="../dict.css" />
-    <title>\ Fix Right Argument</title>
+    <title>/ Fix Left Argument</title>
   </head>
   <body>
     <a href="../title.html"    >title</a>&nbsp;
@@ -22,9 +22,9 @@
 	<td width=34% align="center">
 	  <table>
 	    <tr>
-	      <td><tt><b><font size=+3>\</font></b></tt></td>
+	      <td><tt><b><font size=+3>/</font></b></tt></td>
 	      <td>&nbsp;</td>
-	      <td bgcolor=#dddddd><tt><font size=+2>Fix Right Argument</font></tt></td>
+	      <td bgcolor=#dddddd><tt><font size=+2>Fix Left Argument</font></tt></td>
 	    </tr>
 	  </table>
 	</td>
@@ -34,7 +34,6 @@
 	</td>
       </tr>
     </table><br />
-
     <table width=100%>
       <tr>
 	<!-- Prefix -->
@@ -52,8 +51,8 @@
 	  made from that value along with the constant operand.
 
 	  <pre>
-    f\k x = f(x,k)
-	  </pre><br />
+    f/k x = f(k,x)
+	  </pre>
 	</td>
 
 	<td width=2%>&nbsp;</td>
@@ -64,10 +63,25 @@
       </tr>
     </table><br />
 
+    <table width=100%>
+      <tr>
+	<td width=31%>&nbsp;</td>
+	<td width=2%>&nbsp;</td>
+	<!-- Solo -->
+	<td valign="top" width=32% bgcolor=#eeeeee>
+	  Binary to unary combinator.
+	  <pre>
+    (/ (f,k)) x = f(k,x)</pre>
+	</td>
+	<td width=2%>&nbsp;</td>
+	<td width=31%>&nbsp;</td>
+      </tr>
+    </table><br />
+
     <!-- Examples -->
     <pre>
-    (minus\1.) 3.
-2.0
+    (plus/1.) 3.
+4.0
 </pre>
   </body>
 </html>

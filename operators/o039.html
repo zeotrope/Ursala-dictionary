@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../dict.css" />
+    <title>\ Fix Right Argument</title>
+  </head>
+  <body>
+    <a href="../title.html"    >title</a>&nbsp;
+    <a href="../index.html"    >index</a>&nbsp;
+    <a href="../pointers.html" >pointers</a>&nbsp;
+    <a href="../operators.html">operators</a>&nbsp;
+    <a href="../types.html"    >types</a>&nbsp;
+    <a href="../phrases.html"  >phrases</a>&nbsp;
+    <a href="../primer.html"   >primer</a>&nbsp;
+    <hr><br />
+
+    <table width=100%>
+      <tr>
+	<td width=33% align="left">
+	    <font size=+1>Operator:&nbsp;&nbsp;</font>
+	    <font size=+2><b><tt>Any</tt></b></font>
+	</td>
+	<td width=34% align="center">
+	  <table>
+	    <tr>
+	      <td><tt><b><font size=+3>\</font></b></tt></td>
+	      <td>&nbsp;</td>
+	      <td bgcolor=#dddddd><tt><font size=+2>Fix Right Argument</font></tt></td>
+	    </tr>
+	  </table>
+	</td>
+	<td width=33% align="right">
+	  <font size=+1>Arity:&nbsp;&nbsp;</font>
+	  <font size=+2><b>0 2 0</b></font>
+	</td>
+      </tr>
+    </table><br />
+
+    <table width=100%>
+      <tr>
+	<!-- Prefix -->
+	<td valign="top" width=31% bgcolor=#eeeeee>
+	</td>
+
+	<td width=2%>&nbsp;</td>
+
+	<!-- Infix -->
+	<td valign="top" width=32% bgcolor=#eeeeee>
+	  The combinator takes a function as its left operand and a constant
+	  as its right operand. The function is expected to be one whose argument is usually a
+	  pair of values. The combinator constructs a function that takes only a single value as
+	  an argument, and returns the result obtained by applying the original function to the pair
+	  made from that value along with the constant operand.
+
+	  <pre>
+    f\k x = f(x,k)
+	  </pre>
+	</td>
+
+	<td width=2%>&nbsp;</td>
+
+	<!-- Postfix -->
+	<td valign="top" width=31% bgcolor=#eeeeee>
+	</td>
+      </tr>
+    </table><br />
+
+    <table width=100%>
+      <tr>
+	<td width=31%>&nbsp;</td>
+	<td width=2%>&nbsp;</td>
+	<!-- Solo -->
+	<td valign="top" width=32% bgcolor=#eeeeee>
+	  Reverse binary to unary combinator.
+	  <pre>
+    (\ (f,k)) x = f(x,k)</pre>
+	</td>
+	<td width=2%>&nbsp;</td>
+	<td width=31%>&nbsp;</td>
+      </tr>
+    </table><br />
+
+    <!-- Examples -->
+    <pre>
+    (minus\1.) 3.
+2.0
+</pre>
+  </body>
+</html>
