@@ -1,16 +1,21 @@
-html { min-width:800px }
+html {min-width:800px;}
 
-a b       {color:#ff9600}
-a tt { color: #000000 }
+a b       {color:#ff9600;}
+a tt      {color: #000000;}
 a:link    {color: #0066cc; text-decoration: none      }
 a:visited {color: #0066cc; text-decoration: none      }
 a:hover   {color: #ff9600; text-decoration: underline }
 
-th { font-size: medium; text-align:left; text-decoration: bold  }
-h1 { font-size: large  }
-h2 { font-size: medium }
-h3 { font-size: medium }
-h4 { font-size: medium }
+th {font-size: medium; text-align:left; text-decoration: bold;}
+h1 {font-size: large; }
+h2 {font-size: medium;}
+h3 {font-size: medium;}
+h4 {font-size: medium;}
 
-table {border-color:#d9d9d9}
-pre   {background:#fff8ed; border: 1pt solid #AEBDCC; padding: 5pt }
+
+table {border-color:#d9d9d9;}
+pre   {background:#fff8ed; border: 1pt solid #AEBDCC; padding: 5pt;}
+
+p.linkbar  {margin:0px;}
+
+table.main {margin-top:20px; margin-bottom:20px;}
